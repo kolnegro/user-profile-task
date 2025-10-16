@@ -19,3 +19,4 @@ user2 = UserProfile("Алина", "alina_new@example.com", "әкімші")
 
 print("\nЖаңартылған профиль:")
 print(user2)
+print("Ramazan")
