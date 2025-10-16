@@ -1,12 +1,21 @@
-import matplotlib.pyplot as plt
-import numpy as np
+class UserProfile:
+    def __init__(self, name, email, role):
+        self.name = name
+        self.email = email
+        self.role = role
 
-x = np.linspace(-5, 5, 100)
-y = 2 * x + 3
+    def __str__(self):
+        return f"Аты: {self.name}, Email: {self.email}, Рөлі: {self.role}"
 
-plt.plot(x, y)
-plt.xlabel("x")
-plt.ylabel("y")
-plt.title("y = 2x + 3")
-plt.grid(True)
-plt.show()
+
+# Бастапқы объект
+user1 = UserProfile("Алина", "alina@example.com", "қолданушы")
+
+print("Бастапқы профиль:")
+print(user1)
+
+# Өзгеріс енгізу үшін жаңа объект жасаймыз
+user2 = UserProfile("Алина", "alina_new@example.com", "әкімші")
+
+print("\nЖаңартылған профиль:")
+print(user2)
